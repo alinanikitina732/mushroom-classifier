@@ -18062,6 +18062,21 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>As expected, the most correlated traits tell us more about the class of the mushroom.<br>
+We see large differences in amount of poisonous and edible mushrooms for each of these traits.<br>
+For example, absence of odor, pendant ring type, broad gill size, and bruises present indicate high likeliness that a mushroom is edible.<br>
+Meanwhile, foul odor, silky stalk surface above or below ring, buff gill color, and absence of bruises indicate high likeliness that a mushroom is poisonous.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Machine-Learning-&amp;-Analysis">Machine Learning &amp; Analysis<a class="anchor-link" href="#Machine-Learning-&amp;-Analysis">&#182;</a></h2><p>Now let's try out a few machine learning algorithms for binary classification, and compare their effectiveness. Hopefully they work better than our initial predictions.</p>
 
 </div>
