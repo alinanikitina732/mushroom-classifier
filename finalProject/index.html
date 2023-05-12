@@ -927,6 +927,8 @@ body{
   line-height:1.28581;
   text-transform:none;
   color:#182026;
+    display: table-cell;
+    vertical-align: middle;
   font-family:-apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", "Icons16", sans-serif; }
 
 p{
@@ -15114,7 +15116,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><h3 id="A-brief-history">A brief history<a class="anchor-link" href="#A-brief-history">&#182;</a></h3><p>Mushrooms have been part of various culture's diets dating back to ancient times, roughly 13,000 years ago.
 This is likely due to their impressive <a href="https://www.uclahealth.org/news/7-health-benefits-of-mushrooms">health benefits</a>.
 You can learn more about the history of human mushroom consumption <a href="https://rrcultivation.com/blogs/mn/exploring-the-role-of-mushrooms-throughout-history">here</a>.
-Even though mushrooms have been consumed by people for thousands of years, there are species of this fungi known to be poisonous to humans.
+Even though mushrooms have been consumed by people for thousands of years, there are species of this fungi known to be poisonous to humans.<br>
 The National Institute of Health estimates there are over 5000 mushroom species worldwide. Only 25% of these species has been named, and of this quarter, 3% are poisonous.
 While we may never know how our ancestors were able to distinguish between edible and poisonous mushrooms, nowadays we have lots of resources to make these distinctions.<br><br></p>
 <h3>Why you'll benefit from this mushroom edible/poisonous predictor<br></h3>
@@ -15529,7 +15531,7 @@ The data is in a comma separated value (CSV) file, which we will store in a pand
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Data-Processing">Data Processing<a class="anchor-link" href="#Data-Processing">&#182;</a></h2><h3 id="Replacing-abbreviated-values-with-characteristics">Replacing abbreviated values with characteristics<a class="anchor-link" href="#Replacing-abbreviated-values-with-characteristics">&#182;</a></h3><p>As you can see, we have access to many characteristics of mushrooms, with 23 features, one of which is the actual class of the mushroom (poisonous or edible).
+<h2 id="Data-Processing">Data Processing<a class="anchor-link" href="#Data-Processing">&#182;</a></h2><h3 id="Replacing-abbreviated-values-with-characteristics">Replacing abbreviated values with characteristics<a class="anchor-link" href="#Replacing-abbreviated-values-with-characteristics">&#182;</a></h3><p>As you can see, we have access to many characteristics of mushrooms, with 23 features, one of which is the actual class of the mushroom (poisonous or edible).<br>
 However, all of our feature values are abbreviated, making it difficult to understand what they represent. Let's replace the abbreviations with the full characteristic phrases.</p>
 
 </div>
@@ -15923,7 +15925,7 @@ However, all of our feature values are abbreviated, making it difficult to under
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Dropping-columns-with-missing-values">Dropping columns with missing values<a class="anchor-link" href="#Dropping-columns-with-missing-values">&#182;</a></h3><p>Now we can understand what the characteristics of our mushrooms mean.
+<h3 id="Dropping-columns-with-missing-values">Dropping columns with missing values<a class="anchor-link" href="#Dropping-columns-with-missing-values">&#182;</a></h3><p>Now we can understand what the characteristics of our mushrooms mean.<br>
 Next up, let's see which columns (mushroom characteristics) have feature values that are missing.</p>
 
 </div>
@@ -16312,7 +16314,7 @@ Next up, let's see which columns (mushroom characteristics) have feature values 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>It looks like only one feature has missing values: stalk-root.
+<p>It looks like only one feature has missing values: stalk-root.<br>
 Let's drop that column. We now have 22 features, 1 of which is the actual class of mushroom.<br>
 In order to do supervised learning for binary classification, we must change our class feature values from edible and poisonous to 0 and 1.<br></p>
 
@@ -17496,7 +17498,7 @@ We start by creating a correlation matrix, which correlates every variable again
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Splitting-data-into-training/testing-&amp;-scaling-the-data">Splitting data into training/testing &amp; scaling the data<a class="anchor-link" href="#Splitting-data-into-training/testing-&amp;-scaling-the-data">&#182;</a></h3><p>We need to use some of our data to train the supervised learning algorithms. Typically, a recommended split is using 80% of the data to train, and 20% of the data to test.
+<h3 id="Splitting-data-into-training/testing-&amp;-scaling-the-data">Splitting data into training/testing &amp; scaling the data<a class="anchor-link" href="#Splitting-data-into-training/testing-&amp;-scaling-the-data">&#182;</a></h3><p>We need to use some of our data to train the supervised learning algorithms. Typically, a recommended split is using 80% of the data to train, and 20% of the data to test.<br>
 After we split the data, we must scale the training data. Scaling data puts points closer together to make the distances between points closer. The proportions stay the same, but decreased distances increases the certainty of the algorithm. Learn more about scaling data <a href="https://analyticsindiamag.com/why-data-scaling-is-important-in-machine-learning-how-to-effectively-do-it/#:~:text=So%20if%20the%20data%20in,between%20them%20will%20be%20lower">here</a>.</p>
 
 </div>
@@ -17590,9 +17592,9 @@ Stored &#39;y_test&#39; (Series)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>There are 8124 mushrooms in our dataset.
-3916 of those mushrooms are poisonous, amounting to 48.2% of the dataset.
-4208 of those mushrooms are edible, amounting to 51.8% of the dataset.
+<p>There are 8124 mushrooms in our dataset.<br>
+3916 of those mushrooms are poisonous, amounting to 48.2% of the dataset.<br>
+4208 of those mushrooms are edible, amounting to 51.8% of the dataset.<br>
 Our data is evenly split between edible and poisonous mushrooms.<br>
 Now let's visualize our data; the first thing you're probably going to notice about a mushroom is its cap color.</p>
 
@@ -17666,7 +17668,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>As we can see in the count plot, the majority of mushrooms in our set are brown, making up over 25% of the dataset. The next contenders are mushrooms with gray caps, then red.
+<p>As we can see in the count plot, the majority of mushrooms in our set are brown, making up over 25% of the dataset. The next contenders are mushrooms with gray caps, then red.<br>
 Another piece of information you're first going to notice when foraging for mushrooms is the habitat you're in. Let's look at the number of mushrooms in this dataset within each habitat.</p>
 
 </div>
@@ -17852,8 +17854,8 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Even though white gill color is supposed to be one of the most telling traits of poisonous mushrooms, ~80% of the mushrooms in our dataset with white gills are edible!
-Red cap color is a little more representative, with over half of mushrooms with a red cap color being poisonous in our dataset, but that is still almost a random guess when we forage! Not! good!
+<p>Even though white gill color is supposed to be one of the most telling traits of poisonous mushrooms, ~80% of the mushrooms in our dataset with white gills are edible!<br>
+Red cap color is a little more representative, with over half of mushrooms with a red cap color being poisonous in our dataset, but that is still almost a random guess when we forage! Not! good!<br>
 The only top characteristic of poisonous mushrooms that our data upholds is a fishy odor. All the mushrooms in our dataset that have a fishy odor are poisonous.</p>
 
 </div>
@@ -17879,8 +17881,8 @@ The only top characteristic of poisonous mushrooms that our data upholds is a fi
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Accuracy,-precision,-recall">Accuracy, precision, recall<a class="anchor-link" href="#Accuracy,-precision,-recall">&#182;</a></h3><p>First we instantiate all of our supervised learning algorithms and create dictionaries to store each algorithm's accuracy, precision, and recall.<br>
-Accuracy measures the number of classifications an algorithm predicted correctly out of the total number of classifications.
-Precision measures true negatives against false positives.
+Accuracy measures the number of classifications an algorithm predicted correctly out of the total number of classifications.<br>
+Precision measures true negatives against false positives.<br>
 Recall is the opposite of precision -- it measures false negatives against true positives.<br>
 Learn more about these terms and what they measure <a href="https://blog.floydhub.com/a-pirates-guide-to-accuracy-precision-recall-and-other-scores/">here</a>.</p>
 
@@ -17897,10 +17899,10 @@ Learn more about these terms and what they measure <a href="https://blog.floydhu
 <h3 id="Supervised-learning-algorithms">Supervised learning algorithms<a class="anchor-link" href="#Supervised-learning-algorithms">&#182;</a></h3><p>After we remove features that were highly correlated to other features, we now have 98 features left (with one hot encoding).
 Now that we have lowered the dimension of our dataset, we can perform supervised learning algorithms to predict mushroom classification.<br>
 There are 5 machine learning algorithms we will use:<br>
-<a href="https://www.kdnuggets.com/2022/07/logistic-regression-work.html">Logistic regression</a> is a model that sums independent variables and calculates the logistic result.
-<a href="https://www.ibm.com/docs/en/spss-modeler/saas?topic=models-how-svm-works">Support vector machines</a> map data to a high dimensional feature space to make it categorizeable.
-<a href="https://www.mastersindatascience.org/learning/machine-learning-algorithms/decision-tree/#:~:text=A%20decision%20tree%20is%20a,that%20contains%20the%20desired%20categorization">Decision trees</a> work by calculating the likeliness of every combination of feature values, and constructing a tree that answers one question a time to reach the classification.
-<a href="https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/#:~:text=A.%20Random%20Forest%20is%20a,model%20is%20a%20decision%20tree">Random forest</a> uses bagging, which trains data in subsets of the training dataset. The final classification output combines the outputs of all these smaller training sets. This bagging is applied to decision trees.
+<a href="https://www.kdnuggets.com/2022/07/logistic-regression-work.html">Logistic regression</a> is a model that sums independent variables and calculates the logistic result.<br>
+<a href="https://www.ibm.com/docs/en/spss-modeler/saas?topic=models-how-svm-works">Support vector machines</a> map data to a high dimensional feature space to make it categorizeable.<br>
+<a href="https://www.mastersindatascience.org/learning/machine-learning-algorithms/decision-tree/#:~:text=A%20decision%20tree%20is%20a,that%20contains%20the%20desired%20categorization">Decision trees</a> work by calculating the likeliness of every combination of feature values, and constructing a tree that answers one question a time to reach the classification.<br>
+<a href="https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/#:~:text=A.%20Random%20Forest%20is%20a,model%20is%20a%20decision%20tree">Random forest</a> uses bagging, which trains data in subsets of the training dataset. The final classification output combines the outputs of all these smaller training sets. This bagging is applied to decision trees.<br>
 <a href="https://medium.com/swlh/k-nearest-neighbor-ca2593d7a3c4#:~:text=K%2Dnearest%20neighbors%20(KNN),closet%20to%20the%20test%20data">K-nearest neighbor</a> predicts the class by calculating the distance between training and test data points.<br>
 Read more about all these supervised learning algorithms by clicking on their names!</p>
 
@@ -17914,7 +17916,7 @@ Read more about all these supervised learning algorithms by clicking on their na
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>For each of the supervised learning algorithms, I fit the model, make the predictions, calculate (accuracy, precision, recall), and build the confusion matrix.
+<p>For each of the supervised learning algorithms, I fit the model, make the predictions, calculate (accuracy, precision, recall), and build the confusion matrix.<br>
 The confusion matrix shows true/false positive/negatives; read more about confusion matrices <a href="https://towardsdatascience.com/understanding-confusion-matrix-a9ad42dcfd62">here</a>.</p>
 
 </div>
@@ -18081,12 +18083,12 @@ Stored &#39;recall&#39; (dict)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h3><p>Here, I compare the accuracy, precision, and recall of all the algorithms used.<br>
-Logistic regression and support vector machines give us the highest accuracy at 98%.
-Next are random forest and k-nearest neighbor with 93%.
+Logistic regression and support vector machines give us the highest accuracy at 98%.<br>
+Next are random forest and k-nearest neighbor with 93%.<br>
 The decision tree algorithm comes in last place, with accuracy of 88%.<br>
-Let's analyze the precision and recall of the top two contenders. Maximizing one of these metrics comes at the cost of the other.
-In the case of logistic regression, precision is higher and recall is lower.
-The same is the case for support vector machines; precision is higher and recall is lower.</p>
+Let's analyze the precision and recall of the top two contenders. Maximizing one of these metrics comes at the cost of the other.<br>
+In the case of logistic regression, precision is higher and recall is lower.<br>
+The same is the case for support vector machines; precision is higher and recall is lower.<br></p>
 
 </div>
 </div>
