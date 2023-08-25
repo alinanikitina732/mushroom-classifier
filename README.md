@@ -1,4 +1,4 @@
-# musrhoom-classifier
+# mushroom-classifier
 
 This project uses machine learning algorithms such as logistic regression; support vector; decision trees; random forests; and k-nearest neighbors.
 The data is first cleaned and pre-processed. The most telling features are chosen to be used in the algorithms, and the data is transformed to one-hot encoding.
