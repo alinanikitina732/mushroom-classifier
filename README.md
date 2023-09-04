@@ -5,3 +5,4 @@ The data is first cleaned and pre-processed. The most telling features are chose
 Each algorithm's success is represented by a confusion matrix, and the results are then analyzed.
 
 To view the results, run the following notebook: `mushroom-classifier/mushroomClassifier/mushroomClassification.ipynb`.
+Alternatively, just click on `mushroom-classifier/mushroomClassifier/mushroomClassification.ipynb` in github to render.
